@@ -1,0 +1,26 @@
+.aboutUs{
+    width: 100vw;
+    height: 92vh;
+    margin-top: 8vh;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutUs h2{
+    font-size: 50px;
+}
+.aboutUs p{
+    font-size: 18px;
+}
+.aboutUs h3{
+    font-size: 20px;
+}
+.temb{
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    width: 55vw;
+    height: 70vh;
+    transform: rotate(180deg);
+}

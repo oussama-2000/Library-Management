@@ -1,0 +1,64 @@
+:root{
+    --color1:#472D2D;
+    --color2:#553939;
+    --color3:#704F4F;
+    --color4:#A77979;
+}
+.pdf-viewer {
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px var(--color3);
+    overflow: hidden;
+    z-index: 101;
+    height: 98vh;
+    border: 1px solid #ccc;
+   /* margin-top: 50px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99.9%;
+    height: 99%;
+  }
+  
+  .pdf-viewer .rpv-toolbar {
+    background-color: var(--color3); 
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+.rpv-core__popover-body{
+  position: absolute;
+  overflow: visible !important;
+   
+  
+  height: 100%;
+}
+.rpv-core__menu{
+  z-index: 300;
+  position: relative;
+  overflow: visible;
+  height: 100%;
+  width: 100%;
+  background-color: #A77979;
+}
+  
+  .pdf-viewer .rpv-toolbar button {
+    background-color: var(--color3);
+    color: white;
+  }
+  
+  .pdf-viewer .rpv-toolbar button:hover {
+    background-color: var(--color4); /* Darker blue on hover */
+  }
+  .pdf-viewer .rpv-toolbar input{
+    background-color: var(--color4);
+  }
+  
+  .message{
+    text-align: center;
+    margin-top: 20vh;
+  }
+  

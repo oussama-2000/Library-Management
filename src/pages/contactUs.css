@@ -1,0 +1,56 @@
+:root{
+    --color1:#472D2D;
+    --color2:#553939;
+    --color3:#704F4F;
+    --color4:#A77979;
+}
+.contactUs{
+    background-color:bisque;
+    width: 100vw;
+    height: 92vh;
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .contactUs h1{
+    font-size: 50px;
+ }
+ .contactUs p:nth-of-type(1):not(.contact-info p){
+    font-size: 30px;
+ }
+ .contact-info p{
+    font-size: 18px;
+ }
+ .contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+ }
+ .contact-form input ,.contact-form textarea{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border:var(--color4) solid 2px;
+ }
+ .contact-form button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--color3);
+    color: white;
+    &&:hover{
+        cursor: pointer;
+        background-color: var(--color4);
+    }
+    
+ }
+ .temc{
+    position: absolute;
+    top: 72%;
+    left: 57%;
+    width: 55vw;
+    height: 70vh;
+    transform: rotate(180deg);
+}
