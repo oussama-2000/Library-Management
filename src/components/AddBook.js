@@ -40,7 +40,7 @@ const AddBook = () => {
     }
   };
 
-  const addBook = (e) => {
+  const addbookk = (e) => {
     e.preventDefault();
     if (!title || !author || !genre || !publishDate || !publisher) {
       alert("Please fill in all required fields.");
@@ -102,64 +102,77 @@ const AddBook = () => {
     <>
       <form className="addBookForm">
         <div>
+        <label>Title:
           <input
             id="title"
             type="text"
-            placeholder="Title"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
+
+          </label>
+          <label>Author:
           <input
             id="author"
             type="text"
-            placeholder="Author"
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
           />
+
+          </label>
+          <label>Genre:
           <input
             id="genre"
             type="text"
-            placeholder="Genre"
             value={genre}
             onChange={(e) => setGenre(e.target.value)}
           />
+
+          </label>
+          <label>Category:
           <select
             id="category"
             value={category}
             onChange={(e) => setCategory(e.target.value)}
           >
-            <option unselectable="true">category</option>
+            <option></option>
             <option>trending books</option>
             <option>classic books</option>
-            <option>recently returned</option>
             <option>books we love</option>
+            <option>recently returned</option>
           </select>
+          </label>
+          <label>Publish Date:
           <input
             id="pd"
             type="date"
-            placeholder="Publish Date"
             value={publishDate}
             onChange={(e) => setPublishDate(e.target.value)}
           />
+
+          </label>
+          <label>Publish Place:
           <input
             id="pp"
             type="text"
-            placeholder="Publish Place"
             value={publishPlace}
             onChange={(e) => setPublishPlace(e.target.value)}
           />
+
+          </label>
+          <label>Publisher:
           <input
             id="p"
             type="text"
-            placeholder="Publisher"
             value={publisher}
             onChange={(e) => setPublisher(e.target.value)}
-          />
+          /></label>
+          <label>This book is to:
           <select value={to} onChange={(e) => setTo(e.target.value)}>
-            <option unselectable="true">This book is to </option>
             <option value={"borrow"}>Borrow</option>
             <option value={"read"}>Read</option>
           </select>
+          </label>
         </div>
 
         <div>
@@ -168,28 +181,30 @@ const AddBook = () => {
             <input id="cover" type="file" onChange={changeImage} />
           </label>
           {image ? <img src={image} alt="filed" width={"70px"} /> : null}
+          <label>ISBN:
           <input
             id="isbn"
             type="text"
-            placeholder="ISBN "
             value={isbn}
             onChange={(e) => setIsbn(e.target.value)}
-          />
+          /></label>
+          <label>Pages :
           <input
+          placeholder="Optional"
             id="pages"
             type="number"
-            placeholder="Pages (Optional)"
             value={pages}
             onChange={(e) => setPages(e.target.value)}
-          />
+          /></label>
+          <label>Synopsis :
           <textarea
+          placeholder="Optional"
             id="synopsis"
             rows={"10"}
             cols={"20"}
-            placeholder="Synopsis (Optional)"
             value={synopsis}
             onChange={(e) => setSynopsis(e.target.value)}
-          />
+          /></label>
           <label htmlFor="file" className="file-label" style={{ zIndex: 2 }}>
             {document ? "Uploaded" : "Upload Book File"}
             <input
@@ -200,12 +215,12 @@ const AddBook = () => {
             />
           </label>
           <div style={{ zIndex: 2 }}>{document}</div>
-          <button onClick={addBook} style={{ zIndex: 2 }}>
+          <button onClick={addbookk} style={{ zIndex: 2 }}>
             Add Book
           </button>
         </div>
       </form>
-      <div>
+      <div className="footer-addbooks">
         <img src={tem} alt="" className="temm" />
         <Footer />
       </div>

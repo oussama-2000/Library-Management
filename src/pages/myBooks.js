@@ -1,36 +1,45 @@
 import { useSelector } from "react-redux";
-import { selectLists } from "../store/booksSlice";
+import { removeBookFromList, selectLists } from "../store/booksSlice";
 import { Link } from "react-router-dom";
-
+import { useDispatch } from "react-redux";
 import "./myBooks.css";
+import "./myBooksMobile.css"
 import Footer from "../components/footer";
-import tem from "../images/bg-splat_4.png";
+
 
 const MyBooks = () => {
   const lists = useSelector(selectLists);
+  const dispatch=useDispatch()
+
 
   return (
     <div>
       <div className="listsContainer">
         <h2>Your Lists</h2>
         <div className="lists">
-          {Object.entries(lists).map(([listName, books]) => (
-            <div key={listName}>
-              <h3>{listName}</h3>
+        {(Object.entries(lists).length===0)?
+        (<div className="emptyMessage">
+          <h1>you have no saved lists</h1>
+          <p>discover and add lists</p>
+        </div>
+          ):
+          (Object.entries(lists).map(([listName, books]) => (
+            <div key={listName} >
+              <h3>{!(lists[listName].length===0)?listName:null}</h3>
               {books.map((book) => (
-                <Link to={`/bookdetails/${book.id}`}>
-                  <div className="list">
+                  <div className="listContainer">
+                <Link to={`/bookdetails/${book.id}`} className="list">
                     <p key={book.id}>{book.title}</p>
                     <img src={book.image} alt="cover" width={"50px"} />
-                  </div>
                 </Link>
+                    <button className="removeFromList" title="Drop from list" onClick={()=>dispatch(removeBookFromList({bookId:book.id, listName}))}>x</button>
+                  </div>
               ))}
             </div>
-          ))}
+          )))}
         </div>
       </div>
       <>
-        <img src={tem} alt="" className="tem" />
         <Footer />
       </>
     </div>

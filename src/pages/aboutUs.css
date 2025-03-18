@@ -6,12 +6,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 5vh;
+    
 }
-.aboutUs h2{
-    font-size: 50px;
-}
+
 .aboutUs p{
     font-size: 18px;
+    text-align: center;
+    max-width: 90%;
 }
 .aboutUs h3{
     font-size: 20px;
@@ -23,4 +25,21 @@
     width: 55vw;
     height: 70vh;
     transform: rotate(180deg);
+}
+@media (max-width: 768px) {
+    .aboutUs{
+        padding-top: 5vh;
+    }
+    
+    .aboutUs p{
+        text-align: center;
+        max-width: 90%;
+    }
+    .aboutUs h3{
+        font-size: 20px;
+    }
+    .temb{
+        display: none;
+    }
+    
 }

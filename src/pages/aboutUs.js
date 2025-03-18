@@ -7,7 +7,7 @@ export default function AboutUs(){
     return(
       <>
         <div className="aboutUs">
-      <h2>About Us</h2>
+      
       <p>
         Welcome to <strong>Your Library</strong>, a place where knowledge meets
         innovation. Our mission is to provide a vast collection of books,

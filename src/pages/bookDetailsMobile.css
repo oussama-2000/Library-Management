@@ -1,0 +1,61 @@
+@media (max-width: 768px) {
+    .bookDetailsSection > div{
+        display: block;
+    }
+    .bookDetailsSection > div .options{
+        width: 90%;
+        height: 85vh;
+        padding: 2%;
+        margin: auto;
+        margin-top: 1%;
+        
+    }
+    .bookButtom{
+        max-width: 150px;
+        margin: auto;
+    }
+    .bookInformation{
+        width: 95vw;
+        margin: auto;
+
+    }
+    .bookInformation .bookInfo{
+        height: 65%;
+        
+        padding: 2%;
+        
+        
+    }
+    .bookTitle,.bookAuthor,.bookStars{
+        display: none;
+    }
+    .title-mobile{
+        display: block;
+        margin-right: 20px;
+        
+    }
+    .bookTitle-mobile{
+        font-size: 27px;
+
+    }
+     .bookAuthor-mobile{
+        margin: 1% 2% 3%;
+    }
+    .bookAuthor-mobile span:nth-of-type(2){
+        font-style: italic;
+        margin-left: 1%;
+        
+    }
+    .bookImage> img{
+        width: 100px;
+    }
+    .bookImage{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .bookImage >div{
+        width: 60%;
+
+    }
+}

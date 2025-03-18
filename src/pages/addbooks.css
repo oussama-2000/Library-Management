@@ -25,6 +25,7 @@
 }
 .addBookForm textarea{
     width: 30vw;
+   
 }
 .addBookForm input, 
 .addBookForm select, 
@@ -37,7 +38,7 @@
     font-size: 16px;
 }
 
-.addBookForm input::placeholder, 
+ 
 .addBookForm textarea::placeholder {
     color: var(--color4);
 }
@@ -96,6 +97,12 @@
     height: 80vh;
     transform: rotate(180deg);
 
+}
+.addBookForm div label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 }
 
 

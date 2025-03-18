@@ -9,8 +9,10 @@ import MyBooks from "./pages/myBooks";
 import LogIn from "./pages/logIn";
 import ContactUs from "./pages/contactUs";
 import AboutUs from "./pages/aboutUs";
+import NoPage from "./pages/nopage";
 
 function App() {
+  
   return (
     <BrowserRouter>
       <Routes>
@@ -23,6 +25,8 @@ function App() {
           <Route path="/contactus" element={<ContactUs/>}/>
           <Route path="/bookviewer/:id" element={<PdfViewer/>}/>
           <Route path="/bookdetails/:id" element={<BookDetails/>}/>
+          <Route path="*" element={<NoPage/>}/>
+          
         </Route>
       </Routes>
     

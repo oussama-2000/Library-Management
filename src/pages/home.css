@@ -4,15 +4,22 @@
   --color3: #704f4f;
   --color4: #a77979;
 }
-body {
+
+body{
+  margin: 0;
   overflow-x: hidden;
+}
+::selection{
+  background-color:var(--color2);
+  color: beige;
 }
 .homeMainSection {
   position: relative;
   width: 100vw;
-  height: 400vh;
+  height: 480vh;
   z-index: 0;
   background-color: rgb(0, 0, 0);
+  
 }
 
 .homeMainSection::before {
@@ -33,6 +40,8 @@ body {
 .slideMessage {
   background-color: rgba(0, 0, 0, 0.432);
   box-shadow: rgba(0, 0, 0, 0.43) 0px 0px 50px 50px;
+  
+
   position: absolute;
   top: 7%;
   left: 2%;
@@ -79,11 +88,11 @@ body {
 
 .slideMessage div:nth-of-type(3) {
   font-size: 20px;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
 }
 .slideMessage div:nth-of-type(4) {
   font-style: italic;
-  margin-bottom: 1%;
+  margin-bottom: 0;
   letter-spacing: 1px;
   word-spacing: 3px;
 }
@@ -308,11 +317,12 @@ body {
   right: 5%;
   top: 12%;
   width: 30%;
-  height: 20%;
+  height: 7%;
   background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 .searchBar input {
   width: 90%;
@@ -337,7 +347,7 @@ body {
   width: auto;
   margin-top: 20px;
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
   display: none;
 }
 .searchBar .searchResult li {
@@ -373,8 +383,9 @@ body {
 .recentlyReturned {
   display: flex;
   flex-direction: row;
-  margin: 4% 1%;
+  margin: 8% 1%;
   height: 50vh;
+  text-align: center;
 }
 .books .trendingBooks::before {
   content: "Trending Books";
@@ -450,12 +461,13 @@ body {
   position: relative;
   height: 350px;
   border-radius: 10px;
-  background-color: white;
+  background-color: antiquewhite;
   box-shadow: 1px 1px 12px black;
   transform: preserve-3d;
   perspective: 2000px;
   color: black;
   margin: 20px;
+  
 }
 .book:hover .bookCover {
   transition: all 0.5s;
@@ -470,6 +482,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  
 }
 .bookContent div:nth-of-type(1) {
   font-weight: bolder;
@@ -494,26 +507,27 @@ body {
 
 .nextArrow {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 97%;
   z-index: 1;
   padding: 10px;
   border-radius: 50%;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.586);
   border: none;
-  box-shadow: 0px 0px 5px 5px white;
+  box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.586);
   cursor: pointer;
+  
 }
 .prevArrow {
   position: absolute;
-  top: 50%;
+  top: 45%;
   right: 97%;
   z-index: 1;
   padding: 10px;
   border-radius: 50%;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.586);
   border: none;
-  box-shadow: 0px 0px 5px 5px white;
+  box-shadow: 0px 0px 5px 5px   rgba(255, 255, 255, 0.586);
   cursor: pointer;
 }
 
@@ -525,7 +539,7 @@ body {
 
 .footer {
   position: absolute;
-  margin-top: 390vh;
+  margin-top: 480vh;
 }
 
 .temh {
@@ -535,4 +549,9 @@ body {
   width: 55vw;
   height: 160%;
   transform: rotate(180deg);
+}
+
+
+.txt-mobile{
+  display: none;
 }

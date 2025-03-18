@@ -1,0 +1,46 @@
+@media (max-width: 768px) {
+    .listsContainer h2 {
+        text-align: center;
+        font-size: 40px;
+        padding-top: 20px;
+      }
+
+      .emptyMessage{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+      }
+
+      .emptyMessage h1{
+        font-size: 20px;
+      }
+
+      .lists:not(.emptyMessage) {
+        display: flex;
+       
+        flex-wrap: wrap;
+        overflow-y: auto;
+        height: 80vh;
+        scrollbar-width: none;
+        flex-direction: row;
+        align-items: center;
+      }
+      .lists > div {
+        padding: 10px;
+        width: 60%;
+      }
+      .removeFromList{
+        position: absolute;
+        top: 30%;
+        right: -35px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-size: 25px;
+        color: red;
+      }
+      
+}

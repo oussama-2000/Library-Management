@@ -1,4 +1,5 @@
 import "./footer.css";
+import "./footerMobile.css"
 import { Link } from "react-router-dom";
 
 import beams from "../images/beams.png";

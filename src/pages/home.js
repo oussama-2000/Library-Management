@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import "./home.css";
+import "./homeMobile.css"
 
 import BookList from "../components/BookList";
 import SearchBook from "./searchBook";
@@ -19,16 +19,15 @@ const Home = () => {
     }, 10);
   });
   //===================================================================================
-
-
   return (
     <>
+    <h1 className="txt-mobile">Welcome to Your Library ; A World of Knowledge</h1>
       <section className="homeMainSection">
         <section className="section1">
           <div className="slideMessage">
             <div>
               <p className="txt">
-                Welcome to Your Library ; A World of Knowledge{" "}
+                Welcome to Your Library ; A World of Knowledge
               </p>
             </div>
             <div>Discover, Borrow, and Learn</div>

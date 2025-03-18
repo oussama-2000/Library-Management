@@ -38,7 +38,7 @@ import b32 from "../images/b32.jpg";
 //================== import documents =========================
 import d_default from "../documents/b1.pdf";
 import d1 from "../documents/b2.pdf";
-import d3 from "../documents/b3.pdf";
+// import d3 from "../documents/b3.pdf";
 import d4 from "../documents/b4.pdf";
 //============================================================
 
@@ -1349,17 +1349,19 @@ const booksSlice = createSlice({
   initialState,
 
   reducers: {
-    addBook: (state, action) => {
-      state.books.push(action.payload);
+    returnBook: (state, action) => {
+      const book = state.books.find((b) => b.id === action.payload);
+      if (book) book.isBorrowed = false;
     },
     borrowBook: (state, action) => {
       const book = state.books.find((b) => b.id === action.payload);
       if (book) book.isBorrowed = true;
     },
-    returnBook: (state, action) => {
-      const book = state.books.find((b) => b.id === action.payload);
-      if (book) book.isBorrowed = false;
+    addBook: (state, action) => {
+      state.books.push(action.payload);
     },
+    
+    
 
     setBooks: (state, action) => {
       state.books = action.payload;
@@ -1394,6 +1396,15 @@ const booksSlice = createSlice({
         state.lists[listName].push(book); // add book if not already in list
       }
     },
+    removeBookFromList:(state,action)=>{
+      const { bookId, listName } = action.payload;
+      
+      
+      if (state.lists && state.lists[listName]) {
+        state.lists[listName] = state.lists[listName].filter((b) => b.id !== bookId);
+        
+      }
+    }
   },
 });
 
@@ -1405,6 +1416,7 @@ export const {
   addComment,
   removeComment,
   addBookToList,
+  removeBookFromList
 } = booksSlice.actions;
 export const selectLists = (state) => state.books.lists || {};
 export default booksSlice.reducer;

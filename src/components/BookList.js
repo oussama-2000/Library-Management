@@ -39,7 +39,7 @@ export default function BookList() {
 
   //============= slider setting ==================
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 4,
@@ -50,15 +50,34 @@ export default function BookList() {
     autoplaySpeed: 2000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    responsive: [
+    {
+      breakpoint: 1024, // Tablets
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 768, // Mobile landscape
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 480, // Mobile portrait
+      settings: {
+        slidesToShow: 1,
+        centerMode: false, // Disable centering for better mobile UX
+      },
+    },
+  ],
   };
   //===============================================
-
-
 
   return (
     <>
       <div className="books">
-        <Slider {...settings} className="trendingBooks"> 
+        <Slider {...settings} className="trendingBooks">
           {books
             .filter((book) => book.category === "trending books")
             .map((book) => (

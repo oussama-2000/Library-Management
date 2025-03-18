@@ -1,0 +1,226 @@
+@media (max-width: 768px) {
+    body{
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .homeMainSection {
+        position: relative;
+        width: 100vw;
+        height: 280vh;
+        z-index: 0;
+        background-color: rgb(0, 0, 0);
+        
+    }
+    .slideMessage {
+        display: none;
+      }
+      .searchBar {
+        position: absolute;
+        right: 5%;
+        top: 13%;
+        width: 60vw;
+        height: 20%;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 15vw;
+        
+      }
+      .searchBar input{
+        font-size: 15px;
+      }
+      .searchBar input::placeholder {
+        font-size: 15px;
+      }
+      .searchBar .searchResult li{
+        font-size: 10px;
+        font-weight: lighter;
+        
+      }
+      .txt-mobile{
+        display: block;
+        color: white;
+       font-family: 'Times New Roman', Times, serif;
+       font-weight: bold;
+       position: absolute;
+       top: 20%;
+       width: 100vw;
+       text-align: center;
+       z-index: 1;
+       
+      }
+      
+      
+      .books {
+        position: absolute;
+        top: 110vh;
+        height: auto;
+        width: 99vw;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.516);
+        box-shadow: rgba(0, 0, 0, 0.521) 10px 10px 50px 50px;
+      }
+      
+      .trendingBooks,
+      .classicBooks,
+      .weLoveBooks,
+      .recentlyReturned {
+        display: flex;
+        flex-direction: column;
+        height: 35vh;
+       text-align: center;
+      }
+      .books .trendingBooks::before {
+        content: "Trending Books";
+        font-size: 30px;
+        font-weight: bold;
+        position: absolute;
+        color: white;
+        top: -15.4%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 5%;
+      }
+      .books .classicBooks::before {
+        content: "Classic Books";
+        top: -15%;
+        font-size: 30px;
+        font-weight: bold;
+        position: absolute;
+        color: white;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 5%;      
+    }
+      .books .weLoveBooks::before {
+          content: "Books We Love";
+          top: -15%;
+          font-size: 30px;
+          font-weight: bold;
+          position: absolute;
+          color: white;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          height: 5%;
+      }
+      .books .recentlyReturned::before {
+        content: "Recently Returned";
+        top: -15%;
+        font-size: 30px;
+        font-weight: bold;
+        position: absolute;
+        color: white;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 5%;      }
+      
+      .books .book .bookCover {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        transform-origin: 0;
+        box-shadow: 1px 1px 12px black;
+        border-radius: 10px;
+        transition: all 1.5s;
+        cursor: pointer;
+      }
+      .bookCover img {
+        border-radius: 10px;
+        height: 100%;
+      }
+      .book {
+        width: 130px !important;
+        position: relative;
+        height: 250px;
+        border-radius: 10px;
+       
+        box-shadow: 1px 1px 12px black;
+        transform: preserve-3d;
+        perspective: 2000px;
+        color: black;
+        margin: 20px;
+      }
+      .book:hover .bookCover {
+        transition: all 0.5s;
+        transform: rotatey(-80deg);
+      }
+      .bookContent {
+        background-color: antiquewhite;
+        width: 80%;
+        height: 100%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 20px;
+      }
+      .bookContent div:nth-of-type(1) {
+        font-weight: bold;
+        font-size: 15px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        text-align: center;
+        
+      }
+      .bookContent div:nth-of-type(2) {
+        font-style: italic;
+        text-align: center;
+        font-size: 10px;
+      }
+      .bookContent div:nth-of-type(3) button {
+        background-color: transparent;
+        border: none;
+        font-size: 10px;
+          cursor: pointer;
+          border-bottom: solid 1px rgba(0, 0, 0, 0.544);
+        
+      }
+      
+      .nextArrow {
+        position: absolute;
+        top: 45%;
+        left: 90%;
+        z-index: 1;
+        padding: 7px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.586);
+        border: none;
+        box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.586);
+        cursor: pointer;
+        
+      }
+      .prevArrow {
+        position: absolute;
+        top: 45%;
+        right: 90%;
+        z-index: 1;
+        padding: 7px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.586);
+        border: none;
+        box-shadow: 0px 0px 5px 5px   rgba(255, 255, 255, 0.586);
+        cursor: pointer;
+      }
+      
+      .footer {
+        position: absolute;
+        margin-top: 280vh;
+      }
+      .temh {
+        display: none;
+        
+      }
+      
+  }
+  
+
+  

@@ -6,7 +6,7 @@ export default function ContactUs(){
     return(
       <>
         <div className="contactUs">
-      <h1>Contact Us</h1>
+      
       <p>Have questions? Reach out to us!</p>
       <div className="contact-info">
         <p><strong>Address:</strong> 123 Library Street, City</p>
