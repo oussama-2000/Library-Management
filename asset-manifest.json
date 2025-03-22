@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/Library-Management/static/css/main.eee2e461.css",
-    "main.js": "/Library-Management/static/js/main.36f069f5.js",
+    "main.css": "/Library-Management/static/css/main.717762c1.css",
+    "main.js": "/Library-Management/static/js/main.44502ccf.js",
     "static/media/b2.pdf": "/Library-Management/static/media/b2.1d9c8706be4a04dc617a.pdf",
     "static/media/b1.pdf": "/Library-Management/static/media/b1.e3efc822ec6372b4f1da.pdf",
-    "static/media/b3.pdf": "/Library-Management/static/media/b3.e3efc822ec6372b4f1da.pdf",
     "static/media/b4.pdf": "/Library-Management/static/media/b4.5e2048878b47ddfeda7c.pdf",
     "static/media/bg.jpg": "/Library-Management/static/media/bg.505bd4ad1021ce373eda.jpg",
+    "static/media/nopage.jpg": "/Library-Management/static/media/nopage.ba9e9c732a809155f21c.jpg",
     "static/media/tower.png": "/Library-Management/static/media/tower.968dc341ba58dcf525d5.png",
     "static/media/bg-splat_4.png": "/Library-Management/static/media/bg-splat_4.c39896d7a0c11a79f753.png",
     "static/media/beams.png": "/Library-Management/static/media/beams.7d6e4155fcedcb121701.png",
@@ -37,16 +37,17 @@
     "static/media/b14.jpg": "/Library-Management/static/media/b14.217a76fe95728b75dd69.jpg",
     "static/media/b13.jpg": "/Library-Management/static/media/b13.be524445c9c8cb82d027.jpg",
     "static/media/out.png": "/Library-Management/static/media/out.d65c83c6c90e4ae69d9d.png",
+    "static/media/login-icon.ico": "/Library-Management/static/media/login-icon.a7d967c7892457374920.ico",
     "static/media/slick.svg": "/Library-Management/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/Library-Management/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/Library-Management/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Library-Management/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Library-Management/index.html",
-    "main.eee2e461.css.map": "/Library-Management/static/css/main.eee2e461.css.map",
-    "main.36f069f5.js.map": "/Library-Management/static/js/main.36f069f5.js.map"
+    "main.717762c1.css.map": "/Library-Management/static/css/main.717762c1.css.map",
+    "main.44502ccf.js.map": "/Library-Management/static/js/main.44502ccf.js.map"
   },
   "entrypoints": [
-    "static/css/main.eee2e461.css",
-    "static/js/main.36f069f5.js"
+    "static/css/main.717762c1.css",
+    "static/js/main.44502ccf.js"
   ]
 }
