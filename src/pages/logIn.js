@@ -1,4 +1,5 @@
 import "./logIn.css";
+import "./logInMobile.css"
 import { useState } from "react";
 import logout from "../images/out.png";
 import tem from "../images/bg-splat_4.png";

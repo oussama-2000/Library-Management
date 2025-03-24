@@ -8,6 +8,7 @@
 body{
   margin: 0;
   overflow-x: hidden;
+  font-family: 'Times New Roman', Times, serif;
 }
 ::selection{
   background-color:var(--color2);

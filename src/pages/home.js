@@ -21,8 +21,8 @@ const Home = () => {
   //===================================================================================
   return (
     <>
-    <h1 className="txt-mobile">Welcome to Your Library ; A World of Knowledge</h1>
       <section className="homeMainSection">
+      <h1 className="txt-mobile">Welcome to Your Library ; A World of Knowledge</h1>
         <section className="section1">
           <div className="slideMessage">
             <div>
@@ -49,8 +49,10 @@ const Home = () => {
               </div>
             </Link>
           </div>
+          <div className="searchBar-home">
 
           <SearchBook />
+          </div>
           <BookList />
           <div className="footer">
             <img src={tem} alt="" className="temh" />
